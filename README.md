@@ -8,4 +8,13 @@
 
 This is the most short and crisp method to file upload in grails 3.
 
-> Grails 2 refer docs of `file uploader` plugin.
+> For Grails 2 refer docs of `file uploader` plugin.
+
+> Note : You can also use:
+```html
+<form action="document/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="fileupload"/>
+  <input type="submit" value="Upload File" />
+</form>
+```
+in place of `<g:uploadForm>`.
